@@ -1,0 +1,34 @@
+# Patika Veri Yapıları ve Algoritmalar
+## Selection Sort Projesi
+
+Insertion Sort - [22,27,16,2,18,6]
+'''
+1. [22,27,16,2,18,6] Ilk hali  (n)
+
+2. [2,27,16,22,18,6] 22 ve 2 yer değiştirdi (n-1)
+
+3. [2,6,16,22,18,27] 27 ve 6 yer değiştirdi (n-2)
+
+4. [2,6,16,18,22,27] 22 ve 18 yer değiştirdi (1)
+'''
+Big O : O(n^2)
+'''
+Average Case: Aranılan sayı dizinin ortasında bulunması durumudur.
+
+Worst Case: Aranılan sayının dizinin en sonunda bulunması durumudur.
+
+Best Case: Aranılan sayının dizinin en başında bulunması durumudur.
+
+Bu durumlardan [2,6,16,18,22,27] dizisi için 18 sayısının dizinin ortasında bulunması sebebiyle Average Case durumu geçerlidir.
+
+Selection Sort - [7,3,5,8,2,9,4,15,6]
+'''
+1. [7,3,5,8,2,9,4,15,6]
+            1.Adım : 7 ve 2 yer değiştirir, sort işlemine 2. elemandan devam edilir.
+2. [2,3,5,8,7,9,4,15,6]
+            2.Adım : Dizinin geri kalanında 2. eleman olan 3 sayısından daha küçük bir eleman bulunmadığından dizin aynı kalır, işleme 3. elemanla devam edilir.
+3. [2,3,5,8,7,9,4,15,6]
+            3.Adım : 5 ve 4 yer değiştirir, işleme 4. elemanla devam edilir.
+4. [2,3,4,8,7,9,5,15,6]
+            4.Adım : 8 ve 5 yer değiştirir, işleme 5. elemanla devam edilir.
+5. [2,3,4,5,7,9,8,15,6]
